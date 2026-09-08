@@ -46,6 +46,25 @@ Crea un archivo `.env` en la raíz del proyecto con las siguientes variables:
 docker compose exec backend python manage.py migrate
 ```
 
+## Datos de demostración
+
+Carga 5 pacientes y 10 tratamientos de ejemplo para explorar la API:
+
+```bash
+docker compose exec backend python manage.py seed_data
+```
+
+Para reiniciar los datos desde cero:
+
+```bash
+docker compose exec backend python manage.py seed_data --clear
+```
+
+Los datos incluyen:
+- Pacientes con tratamientos **activos**, **completados** y **cancelados**
+- Un paciente sin tratamientos activos (útil para probar `/active-treatment/`)
+- Un paciente con múltiples tratamientos simultáneos
+
 ## Ejecución de tests
 
 ```bash
