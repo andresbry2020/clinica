@@ -23,7 +23,7 @@ docker compose up --build
 ```
 
 - API disponible en: http://localhost:8000/api/
-- Documentación Swagger: http://localhost:8000/api/schema/docs/
+- Documentación Swagger: http://localhost:8000/api/docs/
 
 ## Variables de entorno
 

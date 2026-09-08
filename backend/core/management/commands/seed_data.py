@@ -41,7 +41,7 @@ class Command(BaseCommand):
             f"\n   → {Patient.objects.count()} pacientes"
             f"\n   → {Treatment.objects.count()} tratamientos"
             f"\n\n📖 Explora la API en: http://localhost:8000/api/"
-            f"\n📚 Documentación en:  http://localhost:8000/api/schema/docs/"
+            f"\n📚 Documentación en:  http://localhost:8000/api/docs/"
         ))
 
     def _create_patients(self):
